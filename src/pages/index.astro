@@ -1,0 +1,405 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import '../styles/global.css'
+import projectImage from '../assets/image.png';
+import img_exp from "../assets/avion.png"
+---
+
+<Layout>
+	<main id="about" class="max-w-4xl w-full space-y-16">
+		<!-- Hero Section -->
+		<section class="text-center space-y-6 py-12">
+			<h1 class="text-4xl md:text-5xl font-bold">
+				Hey, soy ZeusDevv
+				<Badge>Estudiante - Desarrollador de software</Badge>
+			</h1>
+			<p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+				Apasionado desarrollador web y estudiante de ingeniería, creando experiencias modernas y ágiles con React, Astro y desarrollo móvil multiplataforma. Siempre explorando nuevas tecnologías para llevar la web al siguiente nivel.
+			</p>
+
+			<!-- Social Links -->
+			<div class="flex justify-center items-center gap-6 pt-4">
+				<a
+					href="#"
+					class="flex items-center gap-2 text-sm hover:text-blue-400 transition-colors"
+				>
+					<svg
+						class="w-4 h-4"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+						></path>
+					</svg>
+					LinkedIn
+				</a>
+				<a
+					href="#"
+					class="flex items-center gap-2 text-sm hover:text-blue-400 transition-colors"
+				>
+					<svg
+						class="w-4 h-4"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+						></path>
+					</svg>
+					GitHub
+				</a>
+				<a
+					href="mailto:midudev@gmail.com"
+					class="flex items-center gap-2 text-sm hover:text-blue-400 transition-colors"
+				>
+					<svg
+						class="w-4 h-4"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+						></path>
+					</svg>
+					zeusdv@gmail.com
+				</a>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section class="space-y-6">
+			<div class="flex items-center gap-3">
+				<svg
+					class="w-6 h-6 text-blue-400"
+					fill="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						d="M12 0l3.09 6.26L22 7.27l-5 4.87 1.18 6.88L12 15.77l-6.18 3.25L7 12.14 2 7.27l6.91-1.01L12 0z"
+					></path>
+				</svg>
+				<h2 class="text-2xl font-bold">Experiencia laboral</h2>
+			</div>
+
+			<!-- Job Experience Timeline -->
+			<div class="space-y-4">
+				<!-- Current Job -->
+				<div
+					class="border border-gray-700 rounded-lg p-6 bg-slate-700/50 relative"
+				>
+					<div class="flex items-start gap-4">
+						<img
+							src={img_exp.src}
+							alt="Twitch logo"
+							class="w-10 h-10 rounded-lg"
+						/>
+						<div class="flex-1">
+							<div class="flex items-center gap-3 mb-2">
+								<span class="text-xs text-gray-400"
+									>Enero 2025</span
+								>
+								<div class="w-2 h-2 bg-blue-400 rounded-full">
+								</div>
+							</div>
+							<h3 class="font-semibold text-lg mb-2">
+								Desarrollador Web -  Freelancer
+							</h3>
+							<p
+								class="text-gray-300 text-sm mb-4 leading-relaxed"
+							>
+								Como freelancer, desarrollo páginas web modernas, interactivas y escalables, aplicando código limpio y ofreciendo experiencias de alta calidad con React y Astro
+							</p>
+
+							<div class="flex items-center gap-2">
+								<span
+									class="px-3 py-1 bg-red-600/20 text-red-300 text-xs rounded-full border border-red-600/30 cursor-pointer hover:bg-red-600/30 transition-colors"
+								>
+									Saber más... →
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Previous Job -->
+				<div
+					class="border border-gray-700 rounded-lg p-6 bg-slate-700/50 relative"
+				>
+					<div class="flex items-start gap-4">
+						<img
+							src={img_exp.src}
+							alt="Adevinta logo"
+							class="w-10 h-10 rounded-lg"
+						/>
+						<div class="flex-1">
+							<div class="flex items-center gap-3 mb-2">
+								<span class="text-xs text-gray-400"
+									>Marzo 2022 - CBTis 283 Aguascalientes, mx</span
+								>
+								<div class="w-2 h-2 bg-gray-400 rounded-full">
+								</div>
+							</div>
+							<h3 class="font-semibold text-lg mb-2">
+								Desarrollador web - Junior
+							</h3>
+							<p
+								class="text-gray-300 text-sm mb-4 leading-relaxed"
+							>
+								Desarrollé una plataforma web escalable e intuitiva para la institución, mejorando la administración y el control escolar mediante soluciones modernas y eficientes. 
+							</p>
+
+							<div class="flex items-center gap-2">
+								<span
+									class="px-3 py-1 bg-blue-600/20 text-blue-300 text-xs rounded-full border border-blue-600/30 cursor-pointer hover:bg-blue-600/30 transition-colors"
+								>
+									Saber más... →
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</section><!-- Projects Section -->
+		<section id="projects" class="space-y-6">
+			<div class="flex items-center gap-3">
+				<svg
+					class="w-6 h-6 text-blue-400"
+					fill="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5H4zm2 2h12v2H6V7zm0 4h12v2H6v-2zm0 4h8v2H6v-2z"
+					></path>
+				</svg>
+				<h2 class="text-2xl font-bold">Proyectos</h2>
+			</div>
+
+			<!-- Featured Project -->
+			<div class="border border-gray-700 rounded-lg p-6 bg-slate-700/50">
+				<div class="space-y-4">
+					<div class="flex items-start justify-between">
+						<div>
+							<h3 class="text-xl font-semibold text-white mb-2">
+								CBTis 283 - Plataforma Educativa
+							</h3>
+							<p
+								class="text-gray-300 text-sm leading-relaxed max-w-2xl"
+							>
+								Creada desde cero con WordPress y tecnologías modernas. Una aplicación web orientada a la gestión educativa, optimizada para facilidad de uso, SEO y rendimiento.
+							</p>
+						</div>
+					</div>
+
+					<!-- Project Links -->
+					<div class="flex items-center gap-4 pt-2">
+						<a
+							href="#"
+							class="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+						>
+							<svg
+								class="w-4 h-4"
+								fill="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+								></path>
+							</svg>
+							Más →
+						</a>
+						<a
+							href="#"
+							class="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+						>
+							<svg
+								class="w-4 h-4"
+								fill="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+								></path>
+							</svg>
+							<span
+								class="bg-cyan-500 text-white px-2 py-1 rounded text-xs"
+								>GitHub</span
+							>
+						</a>
+					</div>
+
+					<!-- Project Preview -->
+					<div class="mt-6 relative">
+						<div
+							class="bg-slate-800 rounded-lg border border-gray-600 overflow-hidden"
+						>
+							<!-- Browser Mock -->
+							<div
+								class="bg-slate-900 px-4 py-2 border-b border-gray-600"
+							>
+								<div class="flex items-center gap-2">
+									<div class="flex gap-1">
+										<div
+											class="w-3 h-3 bg-red-500 rounded-full"
+										>
+										</div>
+										<div
+											class="w-3 h-3 bg-yellow-500 rounded-full"
+										>
+										</div>
+										<div
+											class="w-3 h-3 bg-green-500 rounded-full"
+										>
+										</div>
+									</div>
+									<div class="text-xs text-gray-400 ml-4">
+										
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Content -->
+							<div
+								class="p-8 bg-gradient-to-br from-slate-800 to-slate-900"
+							>
+								<div class="text-center space-y-6">
+									<h4 class="text-2xl font-bold text-white">
+										Pagina CBTIS 283
+									</h4>
+									<p class="text-gray-300 text-sm">
+										Creé una plataforma web para el sistema educativo del CBTis 283 en Aguascalientes, empleando tecnologías modernas y optimizadas sobre WordPress para mejorar la experiencia de usuarios y administradores.
+									</p>
+
+									<img src={projectImage.src} alt="" class=" rounded-xl shadow-lg border-2 border-gray-600 object-cover transition-transform duration-300 hover:scale-105">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- Contact Section -->
+		<section id="contact" class="space-y-6">
+			<div class="flex items-center gap-3">
+				<svg
+					class="w-6 h-6 text-blue-400"
+					fill="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+					></path>
+				</svg>
+				<h2 class="text-2xl font-bold">Contacto</h2>
+			</div>
+
+			<div
+				class="border border-gray-700 rounded-lg p-8 bg-slate-700/50 text-center"
+			>
+				<div class="space-y-4">
+					<h3 class="text-xl font-semibold text-white">¡Hablemos!</h3>
+					<p class="text-gray-300 text-sm max-w-md mx-auto">
+						¿Tienes algún proyecto en mente? ¿Quieres colaborar
+						conmigo? Escríbeme por WhatsApp y conversemos.
+					</p>
+
+					<a
+						href="https://wa.me/529831147772?text=Hola%20ZeusDevv%2C%20me%20interesa%20contactarte%20sobre%20un%20proyecto"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 mt-4"
+					>
+						<svg
+							class="w-5 h-5"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.49"
+							></path>
+						</svg>
+						Escribir por WhatsApp
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="w-full max-w-4xl mt-16 border-t border-gray-700 pt-8 pb-8">
+		<div
+			class="flex flex-col md:flex-row justify-between items-center gap-6"
+		>
+			<div class="flex items-center gap-4">
+				<img
+					class="rounded-full w-10 h-10"
+					src="https://zeuscach.github.io/zeusDevv/img/yo.jpg"
+					alt="zeusdevv photo"
+				/>
+				<div>
+					<p class="text-sm font-medium text-white">ZeusDevv</p>
+					<p class="text-xs text-gray-400">Web Developer</p>
+				</div>
+			</div>
+
+			<div class="flex items-center gap-6">
+				<a
+					href="https://linkedin.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-gray-400 hover:text-white transition-colors"
+				>
+					<svg
+						class="w-5 h-5"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+						></path>
+					</svg>
+				</a>
+				<a
+					href="https://github.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-gray-400 hover:text-white transition-colors"
+				>
+					<svg
+						class="w-5 h-5"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+						></path>
+					</svg>
+				</a>
+				<a
+					href="mailto:zeusdevv@gmail.com"
+					class="text-gray-400 hover:text-white transition-colors"
+				>
+					<svg
+						class="w-5 h-5"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+						></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+
+		<div class="text-center mt-8 pt-6 border-t border-gray-700">
+			<p class="text-xs text-gray-400">
+				© 2024 ZeusDevv. Desarrollado con
+				<span class="text-red-500">♥</span>
+				usando Astro y Tailwind CSS
+			</p>
+		</div>
+	</footer>
+</Layout>

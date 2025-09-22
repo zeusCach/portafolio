@@ -1,0 +1,140 @@
+---
+import tailwindcss from "@tailwindcss/vite";
+import "../styles/global.css";
+---
+
+<header class="flex justify-between items-center py-6 w-full max-w-4xl">
+    <img
+        class="rounded-full w-10 h-10 md:w-12 md:h-12"
+        src="https://zeuscach.github.io/zeusDevv/img/yo.jpg"
+        alt="zeusdevv photo"
+    />
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex flex-row gap-x-8 text-sm">
+        <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+        <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+        <a href="#projects" class="hover:text-blue-400 transition-colors"
+            >Projects</a
+        >
+        <a href="#contact" class="hover:text-blue-400 transition-colors"
+            >Contact</a
+        >
+        <a
+            href="/Zeus Cach - CV.pdf"
+            download="Zeus Cach - CV.pdf"
+            class="hover:text-blue-400 transition-colors">cv</a
+        >
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button
+        id="mobile-menu-button"
+        class="md:hidden flex flex-col gap-1 p-2"
+        aria-label="Abrir menú de navegación"
+    >
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300"
+        ></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300"
+        ></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300"
+        ></span>
+    </button>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<nav
+    id="mobile-menu"
+    class="md:hidden fixed top-0 left-0 w-full h-full bg-slate-800/95 backdrop-blur-sm z-50 opacity-0 invisible transition-all duration-300"
+>
+    <div
+        class="flex flex-col items-center justify-center h-full space-y-8 text-lg"
+    >
+        <button
+            id="close-menu-button"
+            class="absolute top-6 right-6 text-2xl text-white"
+            aria-label="Cerrar menú"
+        >
+            ×
+        </button>
+
+        <a
+            href="#inicio"
+            class="hover:text-blue-400 transition-colors mobile-menu-link"
+            >Home</a
+        >
+        <a
+            href="#about"
+            class="hover:text-blue-400 transition-colors mobile-menu-link"
+            >About</a
+        >
+        <a
+            href="#proyectos"
+            class="hover:text-blue-400 transition-colors mobile-menu-link"
+            >Projects</a
+        >
+        <a
+            href="#contacto"
+            class="hover:text-blue-400 transition-colors mobile-menu-link"
+            >Contact</a
+        >
+    </div>
+</nav>
+
+<script type="module">
+    // Mobile menu functionality
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeMenuButton = document.getElementById("close-menu-button");
+    const menuLinks = document.querySelectorAll(".mobile-menu-link");
+
+    if (mobileMenu && mobileMenuButton && closeMenuButton) {
+        function openMenu() {
+            mobileMenu.classList.remove("opacity-0", "invisible");
+            mobileMenu.classList.add("opacity-100", "visible");
+            document.body.style.overflow = "hidden";
+
+            // Animate hamburger to X
+            const spans = mobileMenuButton.querySelectorAll("span");
+            spans[0].style.transform = "rotate(45deg) translate(6px, 6px)";
+            spans[1].style.opacity = "0";
+            spans[2].style.transform = "rotate(-45deg) translate(6px, -6px)";
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add("opacity-0", "invisible");
+            mobileMenu.classList.remove("opacity-100", "visible");
+            document.body.style.overflow = "auto";
+
+            const spans = mobileMenuButton.querySelectorAll("span");
+            spans[0].style.transform = "none";
+            spans[1].style.opacity = "1";
+            spans[2].style.transform = "none";
+        }
+
+        mobileMenuButton.addEventListener("click", openMenu);
+        closeMenuButton.addEventListener("click", closeMenu);
+
+        // Close menu when clicking on links
+        menuLinks.forEach((link) => {
+            link.addEventListener("click", closeMenu);
+        });
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener("click", (e) => {
+            if (e.target === mobileMenu) {
+                closeMenu();
+            }
+        });
+
+        // Handle ESC key
+        document.addEventListener("keydown", (e) => {
+            if (
+                e.key === "Escape" &&
+                !mobileMenu.classList.contains("invisible")
+            ) {
+                closeMenu();
+            }
+        });
+    }
+</script>
